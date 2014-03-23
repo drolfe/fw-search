@@ -1,5 +1,5 @@
 require 'sinatra'
-#$testcfg = File.read("test.cfg")
+
 get '/' do
 erb :landing
 end
