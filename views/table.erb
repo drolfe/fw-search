@@ -1,6 +1,7 @@
 <h3>Search Results for <strong class="text-info"> <%= $search_txt %> </strong></h3>
 <table class="table table-striped table-bordered table-hover">
 <% @results.each do |elem| %>
+<% elem[$search_txt]= "<strong class=\"text-info\">" + $search_txt + "</strong>" %>  
   <tr>
     <td><%= elem %></td>
   </tr>
