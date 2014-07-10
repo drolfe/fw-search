@@ -16,7 +16,7 @@ end
 post '/' do
 
 #seach policy blocks from user input
-$search_txt = ""
+$search_txt = Hash.new
 $search_txt = params[:search_txt]
 @results = $fwpolicy.select {|pol| pol.include? $search_txt}
 erb :table
